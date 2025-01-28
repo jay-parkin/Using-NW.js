@@ -124,7 +124,3 @@ This repository may be expanded to include:
 - Scripts to automate the NW.js setup and packaging process.
 - Additional configuration options for advanced NW.js features.
 - Examples of cross-platform executables for Windows, macOS, and Linux.
-
-```
-
-```
