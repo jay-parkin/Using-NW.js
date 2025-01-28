@@ -91,3 +91,11 @@ This repository serves as a comprehensive guide and a practical example for usin
 
 2. **Errors in packaging:**
    - Double-check that all required files are included in the `build/` directory.
+
+## Future Updates
+
+This repository may be expanded to include:
+
+- Scripts to automate the NW.js setup and packaging process.
+- Additional configuration options for advanced NW.js features.
+- Examples of cross-platform executables for Windows, macOS, and Linux.
