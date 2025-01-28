@@ -28,7 +28,7 @@ This repository serves as a comprehensive guide and a practical example for usin
 
 1. **Download NW.js:**
 
-   - Visit the [NW.js download page](https://nwjs.io/download/).
+   - Visit the [NW.js download page](https://nwjs.io/downloads/).
    - Choose the appropriate version for your operating system (e.g., Normal, SDK, or LTS).
      - SDK will allow devtools
 
