@@ -84,10 +84,8 @@ This creates a `build/` directory containing your project-ready React app.
       "name": "your-app-name",
       "version": "1.0.0",
       "main": "build/index.html",
-      "node-remote": "path/to/remote-files",
       "window": {
         "title": "window-title",
-        "icon": "path/to/icon.png",
         "toolbar": true,
         "frame": true,
         "width": 800,
@@ -97,7 +95,20 @@ This creates a `build/` directory containing your project-ready React app.
     }
     ```
 
-    Adjust the `width`, `height`, and other window properties as needed.
+    Adjust the `width`, `height`, and other window properties as needed.<br>
+
+    Additionally you can add an `node-remote` to retrieve local files or `icon` to store an app icon.
+
+    ```json
+    {
+      "node-remote": "path/to/remote-files",
+      "window": {
+        "icon": "path/to/icon.png"
+      }
+    }
+    ```
+
+    Remove `node-remote` and `icon` if you don't have a file path.
 
 2.  **Copy the `build/` directory into the NW.js folder:**
 
