@@ -44,11 +44,36 @@ This repository serves as a comprehensive guide and a practical example for usin
    ```bash
    cd /path/to/your-react-project
    ```
-2. **Build the React project**
+2. **Edit `vite.config.js**
+
+   - Edit the `vite.config.js` with the following structure:
+
+   ```javascript
+   import { defineConfig } from "vite";
+   import react from "@vitejs/plugin-react";
+   // https://vite.dev/config/
+   export default defineConfig({
+     plugins: [react()],
+     resolve: {
+       alias: {
+         "@": "/src", // Example alias for clean imports
+       },
+     },
+     base: "./",
+     build: {
+       outDir: "./build/", // NWJS build path
+       emptyOutDir: true,
+       assetsDir: "assets",
+     },
+   });
+   ```
+
+3. **Build the React project**
    ```bash
    npm run build
    ```
-   This creates a `build/` directory containing your project-ready React app.
+
+This creates a `build/` directory containing your project-ready React app.
 
 ## Step 3: Prepare the NW.js Application
 
@@ -99,3 +124,7 @@ This repository may be expanded to include:
 - Scripts to automate the NW.js setup and packaging process.
 - Additional configuration options for advanced NW.js features.
 - Examples of cross-platform executables for Windows, macOS, and Linux.
+
+```
+
+```
